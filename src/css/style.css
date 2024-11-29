@@ -1,0 +1,50 @@
+* {
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;}
+
+.navbar-nav {
+    position: fixed;
+    z-index: 2;
+
+    display: flex; /* Используем Flexbox для расположения элементов в строку */
+    justify-content: space-between; /* Равномерно распределяем элементы по ширине */
+    width: 100%; /* Устанавливаем ширину 100% от родительского элемента */
+    padding: 0; /* Убираем внутренние отступы */
+    margin-right: 80px;
+    margin-left: 80px;/* Убираем внешние отступы */
+    list-style: none; /* Убираем маркеры списка */
+    font-size: 22px;
+}
+
+.promo {
+    min-height: 900px;
+    background: url('../img/bg_4.png') center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+}
+    .promo_header {
+        color: #000000;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 60px;
+        line-height: 70px;
+        margin: 0;
+        text-align: center;
+    }
+    .promo_subheader {
+        color: hsl(140, 92%, 14%);
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 36px;
+        line-height: 50px;
+        margin: 0;
+        margin-top: 60px;
+        text-align: center;
+    }
+    .promo_descr {
+        color: hsl(140, 92%, 14%);
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 40px;
+        text-align: center;
+        margin-top: 60px; }
