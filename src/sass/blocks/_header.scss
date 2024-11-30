@@ -1,0 +1,41 @@
+@use 'base/variables' as vars;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 0;
+    &__logo {
+        width: 100px;
+        img {
+            width: 100%;
+        }
+    }
+    &__official {
+        color: vars.$main-color;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        span {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    &__phone {
+        display: block;
+        color: vars.$main-color;
+        font-size: 16px;
+        font-weight: 600;
+        &:hover {
+            color: vars.$button-color;
+            text-decoration: none;
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}

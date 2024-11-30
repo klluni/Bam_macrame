@@ -1,0 +1,11 @@
+@use 'base/variables' as vars;
+.button {
+    width: 150px;
+    height: 30px;
+    background-color: vars.$button-color;
+    border: none;
+    color: vars.$main-color;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}

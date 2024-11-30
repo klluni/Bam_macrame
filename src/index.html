@@ -4,72 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Macrame</title>
-    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Tenor+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Подключение Bootstrap 5.3 CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap-reboot.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans:wght@400&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
-
-    <nav class="navbar navbar-expand-lg" style="background-color: hsl(92, 79%, 81%);">
-        <div class="container-fluid">
-            <!-- Иконка сайта (логотип) слева -->
-            <a class="navbar-brand" href="index.html">
-                <img src="img/icon.png" alt="Логотип" style="width:60px; height:60px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">Обо мне</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="schedule.html">Расписание</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="creative-evenings.html">Творческие вечера</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="workshops.html">Мастер-классы</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="products.html">Товары</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Пример контента для главной страницы -->
-    <div class="promo" id="promo">
+    <div class="promo">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
-                    <h1 class="promo_header">Макраме | MK | Творческие встречи в Коломне</h1>
-                    <h2 class="promo_subheader">Творческие мастер-классы в уютной студии макраме Светланы Климовой</h2>
-                    <div class="promo_descr">
-                        Здесь вы найдете вдохновение, творчество и возможность приобрести навык в создании удивительных вещей с помощью макраме.
-                        <br><br>
+            <header class="header">
+                <a href="#" class="header__logo">
+                    <img src="img/icon_green.png" alt="logo"/>
+                </a>
+                <div class="header__official">
+                    Светлана Климова
+                    <span>Студия Макраме в Коломне</span>
+                </div>
+                <div class="header__contacts">
+                    <a href="tel:+79268116202" class="header__phone">+7 (926) 811-62-02</a>
+                    <button class="button">Заказать звонок</button>
+                </div>
+            </header>
+            <div class="promo__wrapper">
+                <h1 class="promo__header">Преобразите интерьер</h1>
+                <h2 class="promo__subheader">с нашими идеями</h2>
+
+                <div class="promo__icons">
+                    <div class="promo__icon">
+                        <img src="img/icon_love.png" alt="personal">
+                        Индивидуальный подход
+                    </div>
+                    <div class="promo__icon">
+                        <img src="img/icon_bag.png" alt="delivery">
+                        Организуем доставку
+                    </div>
+                    <div class="promo__icon">
+                        <img src="img/icon_chat.png" alt="response">
+                        Ответим на все вопросы
                     </div>
                 </div>
+                <button class="button button_main"> Заказать консультацию</button>
+                <div class="promo__link">
+                    или
+                    <a href="">Перейти в каталог</a>
+                </div>
             </div>
-        </div>          
+
+
+        </div>
     </div>
-
-    <!-- Подключение Bootstrap 5.3 JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
-    <script src="js/script.js"></script>
-
 </body>
 </html>
-
