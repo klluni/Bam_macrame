@@ -1,5 +1,59 @@
+@use 'base/variables' as vars;
 .promo {
     min-height: 650px;
     padding: 21px 0 93px 0;
-    background: url(../../img/bg_4.png) center (center/cover) no-repeat;
+    background: url(../../img/bg_4.png) center /cover no-repeat;
+    &__wrapper {
+        margin: 0 auto;
+        padding: 10px 0;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    &__header {
+        color: vars.$main-color;
+        font-size: 42px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 42px;
+    }
+    &__subheader {
+        margin-top: 17px;
+        color: vars.$main-color;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &__icons {
+        margin-top: 65px;
+        width: 425px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon {
+        width: 108px;
+        text-align: center;
+        color: vars.$main-color;
+        font-size: 14px;
+        font-weight: 500;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+    &__link {
+        color: vars.$main-color;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 18px;
+        a {
+            color: vars.$main-color;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+    }
 }
