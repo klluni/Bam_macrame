@@ -1,0 +1,7 @@
+@use 'base/variables' as vars;
+.title {
+    color: vars.$main-color;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+}
