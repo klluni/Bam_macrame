@@ -3,6 +3,7 @@
 @use 'blocks/header' as head;
 @use 'blocks/advantages' as adv;
 @use 'blocks/title' as tit;
+@use 'blocks/consultation' as cons;
 @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans:wght@400&display=swap');
 * {
     font-family: vars.$font-stack;
