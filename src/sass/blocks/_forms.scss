@@ -1,0 +1,75 @@
+@use 'base/variables' as vars;
+.feed-form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 40px 100px 20px 250px;
+    input {
+        height: 50px;
+        border-radius: 5px;
+        background-color: vars.$button-color;
+        margin-bottom: 15px;
+        border: none;
+        padding: 0 20px;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 300;
+        &:nth-child(3) {
+            margin-bottom: 20px;
+        }
+    }
+    &__submit {  // Исправлено - $_submit на &__submit
+        width: 100%;
+        height: 55px;
+        color: #fff;
+        font-size: 16px;
+    }    
+}
+@media (max-width: 1200px) {
+    .feed-form {
+        width: 300px; /* Уменьшенная ширина для планшетов */
+        margin: 20px auto; /* Центрирование формы */
+    }
+}
+@media (max-width: 991px) {
+    .feed-form {
+        width: 90%; /* Большая ширина для мобильных устройств */
+        margin: 20px 5%; /* Уменьшенные отступы */
+        input {
+            font-size: 16px; /* Увеличение размера шрифта для лучшей видимости на мобильных устройствах */
+            height: 45px; /* Уменьшение высоты поля ввода для мобильных устройств */
+        }
+        &__submit {  // Исправлено - $_submit на &__submit
+            font-size: 18px; /* Увеличение шрифта для кнопки отправки */
+            height: 50px; /* Уменьшение высоты кнопки */
+        }
+    }
+}
+@media (max-width: 767px) {
+    .feed-form {
+        width: 90%; /* Увеличенная ширина для мобильных и небольших экранов */
+        margin: 12px 10px 20px 25px; /* Центрирование формы */
+        input {
+            font-size: 16px; /* Увеличение размера шрифта для лучшей видимости на мобильных устройствах */
+            height: 45px; /* Уменьшение высоты поля ввода для мобильных устройств */
+        }
+        &__submit {  // Исправлено - $_submit на &__submit
+            font-size: 18px; /* Увеличение шрифта для кнопки отправки */
+            height: 50px; /* Уменьшение высоты кнопки */
+        }
+    }
+}
+@media (max-width: 575px) {
+    .feed-form {
+        width: 100%; /* Полная ширина для самых маленьких экранов */
+        margin: 10px 0; /* Минимальные отступы */
+        input {
+            height: 40px; /* Уменьшенная высота для маленьких экранов */
+            padding: 0 10px; /* Уменьшение внутреннего отступа для доступа */
+            font-size: 14px; /* Размер шрифта поля ввода для мобильных устройств */
+        }
+        &__submit {  // Исправлено - $_submit на &__submit
+            height: 45px; /* Уменьшенная высота кнопки */
+        }
+    }
+}

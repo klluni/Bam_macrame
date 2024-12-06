@@ -4,4 +4,43 @@
     font-size: 26px;
     font-weight: 700;
     text-align: center;
+    text-transform: uppercase;
+    &_left {
+        color: vars.$main-color;
+        font-size: 36px;
+        text-align: center;
+    }
+}
+/* Адаптация под разные разрешения */
+@media (max-width: 1200px) {
+    .title {
+        font-size: 24px; /* Уменьшение размера шрифта для больших экранов */
+    }
+    .title_left {
+        font-size: 34px; /* Уменьшение размера шрифта для левой части */
+    }
+}
+@media (max-width: 991px) {
+    .title {
+        font-size: 22px; /* Уменьшение размера шрифта для средних экранов */
+    }
+    .title_left {
+        font-size: 32px; /* Уменьшение размера шрифта для левой части */
+    }
+}
+@media (max-width: 767px) {
+    .title {
+        font-size: 20px; /* Уменьшение размера шрифта для мобильных устройств */
+    }
+    .title_left {
+        font-size: 28px; /* Уменьшение размера шрифта для левой части */
+    }
+}
+@media (max-width: 575px) {
+    .title {
+        font-size: 18px; /* Минимальный размер шрифта для самых маленьких экранов */
+    }
+    .title_left {
+        font-size: 24px; /* Минимальный размер шрифта для левой части */
+    }
 }

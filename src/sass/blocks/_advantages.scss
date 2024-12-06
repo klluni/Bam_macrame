@@ -1,39 +1,75 @@
 @use 'base/variables' as vars;
+
 .advantages {
     padding: 35px 30px 80px 23px;
     background-color: rgb(248, 242, 235);
-    background: url(../img/bg.png) center /cover no-repeat;
+    background: url(../img/bg.png) center / cover no-repeat;
     &__wrapper {
         margin-top: 10px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap; // Обеспечивает перенос элементов на меньших экранах
+        @media (max-width: 1200px) {
+            justify-content: center; /* Центрировать на экранах меньше 1200px */
+        }
     }
     &__item {
         display: flex;
         flex-direction: column;
         align-items: center;
         max-width: 380px;
+        margin-bottom: 20px; // Добавление отступа для разделения элементов
+        @media (max-width: 1200px) {
+            max-width: 300px; /* Уменьшение ширины для экранов 1200px */
+        }
+        @media (max-width: 991px) {
+            max-width: 45%; /* Две колонки на экранах 991px и меньше */
+        }
+        @media (max-width: 767px) {
+            max-width: 90%; /* Полная ширина для экранов 767px */
+        }
+        @media (max-width: 575px) {
+            max-width: 100%; /* Полная ширина для мобильных устройств */
+            padding: 0 10px; // Добавление бокового отступа для мобильных
+        }
     }
     &__subtitle {
         margin-top: 18px;
-        color:  vars.$main-color;
+        color: vars.$main-color;
         font-size: 18px;
         font-weight: 600;
         text-align: center;
+        @media (max-width: 1200px) {
+            font-size: 16px; /* Уменьшение размера шрифта на экранах меньше 1200px */
+        }
+        @media (max-width: 575px) {
+            font-size: 14px; /* Минимальный размер шрифта для мобильных */
+        }
     }
     &__descr {
         margin-top: 10px;
-        color:  vars.$main-color;
+        color: vars.$main-color;
         font-size: 18px;
         font-weight: 300;
         text-align: center;
         line-height: 1.2;
+        @media (max-width: 1200px) {
+            font-size: 16px; /* Уменьшение текста на экранах 1200px и ниже */
+        }
+        @media (max-width: 575px) {
+            font-size: 14px; /* Минимальный размер шрифта для мобильных */
+        }
         a {
-            display: block;    
+            display: block;
             color: #000000;
-            text-decoration: underline; 
+            text-decoration: underline;
             font-weight: 700;
-            margin-top: 10px;             
+            margin-top: 10px;
+            @media (max-width: 575px) {
+                font-size: 12px; /* Уменьшение размера шрифта для ссылок на мобильных */
+            }
         }
     }
 }
+
+
