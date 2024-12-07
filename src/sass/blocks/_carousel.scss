@@ -1,0 +1,8 @@
+@use 'base/variables' as vars;
+.carousel {
+    &__inner {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}

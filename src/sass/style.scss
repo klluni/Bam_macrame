@@ -5,6 +5,7 @@
 @use 'blocks/title' as tit;
 @use 'blocks/consultation' as cons;
 @use 'blocks/forms' as forms;
+@use 'blocks/carousel' as car;
 @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans:wght@400&display=swap');
 * {
     font-family: vars.$font-stack;
@@ -25,7 +26,6 @@
     .container {
         max-width: 85%; // Уменьшение ширины для планшетов
     }
-
     * {
         font-size: 14px; // Уменьшение размера шрифта для планшетов
     }
@@ -35,7 +35,6 @@
         max-width: 100%; // Полная ширина для мобильных устройств
         padding: 0 15px; // Добавление боковых отступов для мобильных
     }
-
     * {
         font-size: 13px; // Уменьшение размера шрифта для мобильных устройств
     }

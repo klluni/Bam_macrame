@@ -9,10 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans:wght@400&display=swap" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
 </head>
 
 <body>
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -51,9 +56,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="advantages">
+    </section>
+    <section class="advantages">
         <div class="container">
             <h2 class="title">Обо мне</h2>
             <div class="advantages__wrapper">
@@ -87,8 +91,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="consultation">
+    </section>
+    <section class="consultation">
         <div class="container">
             <h2 class="title title_left">
                 Получите консультацию<br>
@@ -103,11 +107,19 @@
                 <input name="phone" required placeholder="Телефон" type="number">
                 <input name="email" required placeholder="E-mail" type="email">
                 <button class="button button_subbmit">Заказать консультацию</button>
-            </form>
-            
+            </form>           
         </div>
-    </div>
+    </section>
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div><img src="img/kashpo.jpg" alt="slade"></div>
+                <div><img src="img/klach.jpg" alt="slade"></div>
+                <div><img src="img/kashpo.jpg" alt="slade"></div>
+            </div>
+        </div>
+    </section>
 
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
