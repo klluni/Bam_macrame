@@ -1,7 +1,7 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import sass from 'gulp-sass';
-import *as dartSass from 'sass';
+import * as dartSass from 'sass';
 import cleanCSS from 'gulp-clean-css';
 import autoprefixer from 'gulp-autoprefixer';
 import rename from 'gulp-rename';
@@ -40,7 +40,7 @@ const watch = () => {
 };
 
 // Задача по умолчанию
-const defaultTask = gulp.parallel(watch, startServe, styles);
+const defaultTask = gulp.parallel(watch, startServe);
 
 // Экспортируем задачи
 export { startServe, styles, watch, defaultTask as default };
