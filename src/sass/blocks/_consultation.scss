@@ -1,7 +1,7 @@
 @use 'base/variables' as vars;
 .consultation {
     min-height: 680px;
-    background: url('../img/bg_2.png') center / cover no-repeat;
+    background: url('../img/bg_cons.png') center / cover no-repeat;
     padding: 35px 30px 80px 23px;
     &__descr {
         color: vars.$main-color;

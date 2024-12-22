@@ -7,7 +7,7 @@
 @use 'blocks/forms' as forms;
 @use 'blocks/carousel' as car;
 @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 * {
     // Используем Tenor Sans по умолчанию
     font-family: vars.$tenor-sans-font-family;
@@ -16,9 +16,9 @@
 }
 h1, h2 {
     // Применяем Great Vibes для заголовков h1
-    font-family: vars.$great-vibes-font-family;
-    font-weight: vars.$great-vibes-font-weight;
-    font-style: vars.$great-vibes-font-style;
+    font-family: vars.$caveat-font-family;
+    font-weight: vars.$caveat-font-weight;
+    font-style: vars.$caveat-font-style;
 }
 .container {
     max-width: 100%;
