@@ -141,13 +141,39 @@
     <section slass="catalog">
         <div class="container">
             <h2 class="title">Каталог изделий</h2>
-            <ul class="catalog_tabs">
-                <li class="catalog_tabs"></li>
-                <li class="catalog_tabs"></li>
-                <li class="catalog_tabs"></li>
+            <ul class="catalog__tabs">
+                <li class="catalog__tab catalog__tab_active"><div>Для интерьера</div></li>
+                <li class="catalog__tab"><div>Аксессуары</div></li>
+                <li class="catalog__tab"><div>Элементы</div></li>
             </ul>
 
-            <div class="catalog__content"></div>
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/tykva.jpg" alt="tykva" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Тыковки</div>
+                            <div class="catalog-item__descr">Декор для дома</div>
+                            <a href="#" class="catalog-item__link">Подробнее</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Тыковки для декора</li>
+                            <li>Натуральный материал - 100% хлопок</li>
+                            <li>Ручная работа</li>
+                            <li>Сделано с любовью для Вас</li>
+                        </ul>
+                    </div>
+                    <hr>                 
+                    
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">1500 ₽</div>
+                            <div class="catalog-item__price">1300 ₽</div>
+                        </div>
+                        <button class="button button_mini">Купить</button>
+                    </div>
+                </div>
+            </div>
             <div class="catalog__content"></div>
             <div class="catalog__content"></div>
         </div>
