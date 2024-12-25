@@ -1,7 +1,7 @@
 @use 'base/variables' as vars;
 .catalog {
-    background: url(../img/bg.png) center / cover no-repeat;
     padding: 40px 0;
+    min-height: 600px;
     &__tabs {
         margin-top: 20px;
         list-style-type: none;
@@ -38,6 +38,12 @@
     }
     &__content {
         margin-top: 30px;
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
     }
     &-item {
         width: 300px;
@@ -45,6 +51,7 @@
         border: 2px solid #e8e8e8;
         padding: 20px 20px 26px 20px;
         overflow: hidden;
+        margin-bottom: 20px;
         &__img {
             display: block;
             margin: 0 auto;
@@ -73,6 +80,7 @@
             font-weight: 600;
             text-decoration: underline;
             text-align: center;
+            text-transform: uppercase;
             &:hover {
                 color: vars.$main-color;
             }
@@ -114,12 +122,13 @@
             }
         }
         &__list {
+            position: relative;
             width: 50%;
             margin-left: 20px;
             transform: translateX(0%);
             transition: 0.5s all;
             padding-right: 20px;
-            padding-left: 0;
+            padding-left: 19px;
             margin-bottom: 0;
             list-style-type: none;
             &_active {
@@ -127,12 +136,87 @@
                 margin-left: 0px;
             }
             li {
+                position: relative;
                 color: vars.$main-color;
                 font-size: 16px;
                 font-weight: 400;
                 margin-bottom: 20px;
+                &:befor {
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background-color:  vars.$main-color;
+                    left: -14px;
+                    top: 7px;
+                }
             }
+        }
+        &_back {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
+            display: block;
+            color: vars.$main-color;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: underline;
+            text-transform: uppercase;
+            &:hover {
+                color: #000000;
+                ;
+            }
+        }
+    }
+}
+// Медиазапросы для адаптивности
+@media (max-width: 1200px) {
+    .catalog {
+        // Измените настройки стилей для устройств с шириной до 1200px.
+        &-item {
+            width: 280px; // Уменьшаем ширину
+        }
+    }
+}
 
+@media (max-width: 992px) {
+    .catalog {
+        padding: 20px 0; // Уменьшаем внешний отступ
+
+        &__tab {
+            width: 180px; // Уменьшаем ширину табов
+        }
+
+        &-item {
+            width: 100%; // Устанавливаем ширину в 100% для мобильных
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .catalog {
+        &__tab {
+            width: 150px; // Еще меньше ширина табов
+        }
+
+        &-item {
+            margin-bottom: 15px; // Уменьшаем расстояние между элементами
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .catalog {
+        &__tab {
+            height: 40px; // Уменьшаем высоту табов
+            font-size: 14px; // Меньший шрифт для табов
+        }
+
+        &-item {
+            width: 100%; // Подгоняем ширину под 100% для маленьких экранов
+            min-height: 300px; // Уменьшаем минимальную высоту элемента
+            padding: 10px; // Уменьшаем внутренние отступы
         }
     }
 }

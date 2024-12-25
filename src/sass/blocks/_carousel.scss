@@ -5,15 +5,10 @@
     &__inner {
         position: relative;
         width: 450px;
-        margin: 0 auto;
-        
+        margin: 0 auto;     
     }
-.slick-prev {
-    border: none;
-    margin: 10px 110px; 
-}
-.slick-next {
-    border: none;
-    margin: 10px 100px;
-}
+    .slick-prev, .slick-next {
+        border: none;
+        margin: 10px 110px; 
+    }
 }
