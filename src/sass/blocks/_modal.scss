@@ -5,21 +5,21 @@
     width: 100%;
     height: 100%;
     top: 0;
-    background-color: rgba(0,0,0, .56);
+    background-color: rgba(0, 0, 0, 0.56);
 }
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 390px;
-    height: 350px;
+    width: 390px; // Ширина по умолчанию
+    height: 350px; // Высота по умолчанию
     background-color: #f2f2f2;
     padding: 10px 10px 100px 10px;
     &__close {
         position: absolute;
         top: 0;
-        right: -40px;
+        right: -40px; // Правое сдвижение кнопки закрытия
         font-size: 41px;
         color: #f2f2f2;
         line-height: 21px;
@@ -40,8 +40,45 @@
     &_mini {
         min-height: 140px;
     }
+    @media (max-width: 1200px) {
+        width: 350px; // Уменьшаем ширину
+        height: 300px; // Уменьшаем высоту
+        padding: 10px; // Уменьшаем внутренние отступы
+    }
+    @media (max-width: 992px) {
+        width: 300px; // Уменьшаем ширину еще больше
+        height: 250px; // Уменьшаем высоту
+        padding: 5px; // Дополнительное уменьшение отступов
+        &__close {
+            right: -30px; // Более компактное закрытие для мобильных
+            font-size: 36px; // Уменьшаем размер шрифта
+        }
+    }
+    @media (max-width: 767px) {
+        width: 90%; // Ширина в процентах для мобильных
+        max-width: 350px; // Ограничиваем максимальную ширину
+        height: auto; // Автоматическая высота для лучшего отображения
+        padding: 10px; // Отступы для мобильного
+    }
+    @media (max-width: 575px) {
+        width: 95%; // Еще более широкая ширина на маленьких экранах
+        max-width: 300px; // Максимальная ширина для маленьких экранов
+        height: auto; // Включаем авто для высоты
+        &__close {
+            right: -25px; // Положение закрытия
+            font-size: 30px; // Уменьшаем для лучшего отображения
+        }
+        &__subtitle {
+            font-size: 16px; // Уменьшаем размер шрифта заголовка
+        }
+        &__descr {
+            font-size: 14px; // Уменьшаем размер шрифта описания
+        }
+    }
 }
-
-#consultation, #order, #thanks {
+// Скрытие модальных окон
+#consultation,
+#order,
+#thanks {
     display: none;
 }
