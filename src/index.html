@@ -30,7 +30,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+79268116202" class="header__phone">+7 (926) 811-62-02</a>
-                    <button class="button">Заказать звонок</button>
+                    <button data-modal="consultation" class="button">Заказать звонок</button>
                 </div>
             </header>
             <div class="promo__wrapper">
@@ -50,7 +50,7 @@
                         Ответим на все вопросы
                     </div>
                 </div>
-                <button class="button button_main"> Заказать консультацию</button>
+                <button data-modal="consultation" class="button button_main">Заказать консультацию</button>
                 <div class="promo__link">
                     или
                     <a href="">Перейти в каталог</a>
@@ -113,6 +113,7 @@
     </section>
     <section class="carousel">
         <div class="container">
+            <h2 class="title">Познакомтесь с нашими изделиями</h2>
             <div class="carousel__inner">
                 <div><img src="img/kashpo.jpg" alt="slade"></div>
                 <div><img src="img/podves.jpg" alt="slade"></div>
@@ -137,13 +138,14 @@
             </div>
         </div>
     </section>
-    <section slass="catalog">
-        <div class="container'" style="background: url('img/bg.png') center / cover repeat;">
+    <!-- <section class="catalog"> -->
+    <section class="catalog" style="background: url('img/bg_katal.png') center / cover no-repeat; margin: 0;">
+        <div class="container" >
             <h2 class="title">Каталог изделий</h2>
             <ul class="catalog__tabs">
                 <li class="catalog__tab catalog__tab_active"><div>Для интерьера</div></li>
                 <li class="catalog__tab"><div>Аксессуары</div></li>
-                <li class="catalog__tab"><div>Элементы одежды</div></li>
+                <li class="catalog__tab"><div>Одежда</div></li>
             </ul>
             <div class="catalog__content catalog__content_active">
                 <div class="catalog-item">
@@ -159,7 +161,7 @@
                             <li>Натуральный материал - 100% хлопок</li>
                             <li>Ручная работа</li>
                             <li>Сделано с любовью для Вас</li>
-                            <a href="#" class="catalog-item_back">Назад</a>
+                            <a href="#" class="catalog-item__back">Назад</a>
                         </ul>
                     </div>
                     <hr>                                     
@@ -184,7 +186,7 @@
                             <li>Натуральный материал - 100% хлопок</li>
                             <li>Ручная работа</li>
                             <li>Сделано с любовью для Вас</li>
-                            <a href="#" class="catalog-item_back">Назад</a>
+                            <a href="#" class="catalog-item__back">Назад</a>
                         </ul>
                     </div>
                     <hr>                                     
@@ -209,7 +211,7 @@
                             <li>Натуральный материал - 100% хлопок</li>
                             <li>Ручная работа</li>
                             <li>Сделано с любовью для Вас</li>
-                            <a href="#" class="catalog-item_back">Назад</a>
+                            <a href="#" class="catalog-item__back">Назад</a>
                         </ul>
                     </div>
                     <hr>                                    
@@ -234,7 +236,7 @@
                             <li>Натуральный материал - 100% хлопок</li>
                             <li>Ручная работа</li>
                             <li>Сделано с любовью для Вас</li>
-                            <a href="#" class="catalog-item_back">Назад</a>
+                            <a href="#" class="catalog-item__back">Назад</a>
                         </ul>
                     </div>
                     <hr>                                    
@@ -259,7 +261,7 @@
                             <li>Натуральный материал - 100% хлопок</li>
                             <li>Ручная работа</li>
                             <li>Сделано с любовью для Вас</li>
-                            <a href="#" class="catalog-item_back">Назад</a>
+                            <a href="#" class="catalog-item__back">Назад</a>
                         </ul>
                     </div>
                     <hr>                                    
@@ -284,7 +286,7 @@
                             <li>Натуральный материал - 100% хлопок</li>
                             <li>Ручная работа</li>
                             <li>Сделано с любовью для Вас</li>
-                            <a href="#" class="catalog-item_back">Назад</a>
+                            <a href="#" class="catalog-item__back">Назад</a>
                         </ul>
                     </div>
                     <hr>                                    
@@ -311,7 +313,7 @@
                             <li>Ручная работаб натуральный материал (100% хлопок)</li>
                             <li>Возможно исполнение в другом цвете или без бахром</li>
                             <li>Сделано с любовью для Вас</li>
-                            <a href="#" class="catalog-item_back">Назад</a>
+                            <a href="#" class="catalog-item__back">Назад</a>
                         </ul>
                     </div>
                     <hr>                                     
@@ -336,7 +338,7 @@
                             <li>Натуральный материал (100% хлопок), дополнительно комплектуется льняные мешочком</li>
                             <li>Ручная работа</li>
                             <li>Сделано с любовью для Вас</li>
-                            <a href="#" class="catalog-item_back">Назад</a>
+                            <a href="#" class="catalog-item__back">Назад</a>
                         </ul>
                     </div>
                     <hr>                                     
@@ -361,7 +363,7 @@
                             <li>Натуральный материал - 100% хлопок</li>
                             <li>Ручная работа, при заказе можно выбрать цвет</li>
                             <li>Сделано с любовью для Вас</li>
-                            <a href="#" class="catalog-item_back">Назад</a>
+                            <a href="#" class="catalog-item__back">Назад</a>
                         </ul>
                     </div>
                     <hr>                                     
@@ -386,7 +388,7 @@
                             <li>Подойдет для любого образа и стиля! Натуральный материал - 100% хлопок!</li>
                             <li>Возможно исполнение на заказ в другом цвете</li>
                             <li>Ручная работа, сделано с любовью для Вас!</li>
-                            <a href="#" class="catalog-item_back">Назад</a>
+                            <a href="#" class="catalog-item__back">Назад</a>
                         </ul>
                     </div>
                     <hr>                                     
@@ -413,7 +415,7 @@
                             <li>Диаметр с бахрамой 35 см, зеркало - 20 см</li>
                             <li>Ручная работа</li>
                             <li>Сделано с любовью для Вас</li>
-                            <a href="#" class="catalog-item_back">Назад</a>
+                            <a href="#" class="catalog-item__back">Назад</a>
                         </ul>
                     </div>
                     <hr>                                     
@@ -452,6 +454,51 @@
         </div>
     </section>
 
+    <footer class="footer">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A21850ab59a5faa3ab691ca78cafcbe5aa35c37ec4c20e8fda48a45a90b3053bb&amp;source=constructor" width="100%" height="630" frameborder="0"></iframe>
+
+        <div class="footer__info">
+            <address class="footer__addr">г.Коломна, Арт-квартал "Патефонка", ул.Уманская, д.3А, 3 этаж, пом.326</address>
+            <a class="footer__phone" href="tel:+79268116202">+7 (926) 811-62-02</a>
+            <div class="footer__social">
+                <a href="https://vk.com/lk_macrame" class="footer__social-item" target="_blank" rel="noopener noreferrer"><img src="img/vk.png" alt="VK"></a>
+                <a href="https://wa.me/+79268116202" class="footer__social-item" target="_blank" rel="noopener noreferrer"><img src="img/wtapp.png" alt="WhatsApp"></a>
+                <a href="https://t.me/lk_macrame" class="footer__social-item" target="_blank" rel="noopener noreferrer"><img src="img/telegram.png" alt="Telegram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Заполните форму заявки</div>
+            <div class="modal__descr">И мы перезвоним вам</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Имя" type="text">
+                <input name="phone" required placeholder="Телефон" type="number">
+                <input name="email" required placeholder="E-mail" type="email">
+                <button class="button button_subbmit">Заказать консультацию</button>
+            </form> 
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Изделие макраме</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Имя" type="text">
+                <input name="phone" required placeholder="Телефон" type="number">
+                <input name="email" required placeholder="E-mail" type="email">
+                <button class="button button_subbmit">купить</button>
+            </form> 
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за ваш заказ!</div>
+            <div class="modal__descr">Мы скоро свяжемся с вами!</div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

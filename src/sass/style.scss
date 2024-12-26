@@ -8,6 +8,8 @@
 @use 'blocks/carousel' as car;
 @use 'blocks/catalog' as cat;
 @use 'blocks/feed' as feed;
+@use 'blocks/footer' as foot;
+@use 'blocks/modal' as mod;
 @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 * {

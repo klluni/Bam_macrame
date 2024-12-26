@@ -32,7 +32,7 @@
         }
         &_active {
             color: vars.$main-color;
-            background-color: hsl(120, 72%, 80%);
+            background-color: vars.$button-color;
             border: none;
         }
     }
@@ -146,13 +146,13 @@
                     position: absolute;
                     width: 5px;
                     height: 5px;
-                    background-color:  vars.$main-color;
+                    background-color: vars.$main-color;
                     left: -14px;
                     top: 7px;
                 }
             }
         }
-        &_back {
+        &__back {
             position: absolute;
             bottom: 0;
             left: 50%;
@@ -170,49 +170,40 @@
         }
     }
 }
-// Медиазапросы для адаптивности
 @media (max-width: 1200px) {
     .catalog {
-        // Измените настройки стилей для устройств с шириной до 1200px.
         &-item {
             width: 280px; // Уменьшаем ширину
         }
     }
 }
-
 @media (max-width: 992px) {
     .catalog {
         padding: 20px 0; // Уменьшаем внешний отступ
-
         &__tab {
             width: 180px; // Уменьшаем ширину табов
         }
-
         &-item {
             width: 100%; // Устанавливаем ширину в 100% для мобильных
         }
     }
 }
-
 @media (max-width: 767px) {
     .catalog {
         &__tab {
             width: 150px; // Еще меньше ширина табов
         }
-
         &-item {
             margin-bottom: 15px; // Уменьшаем расстояние между элементами
         }
     }
 }
-
 @media (max-width: 575px) {
     .catalog {
         &__tab {
             height: 40px; // Уменьшаем высоту табов
             font-size: 14px; // Меньший шрифт для табов
         }
-
         &-item {
             width: 100%; // Подгоняем ширину под 100% для маленьких экранов
             min-height: 300px; // Уменьшаем минимальную высоту элемента

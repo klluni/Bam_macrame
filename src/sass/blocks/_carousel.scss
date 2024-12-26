@@ -1,14 +1,38 @@
 @use 'base/variables' as vars;
 .carousel {
-    background: url(../img/bg_kar.png) center / cover no-repeat;
+    background: url(../img/bg_karus.png) center / cover no-repeat;
     padding: 40px 0;
     &__inner {
         position: relative;
         width: 450px;
-        margin: 0 auto;     
+        margin: 0 auto;
+        @media (max-width: 1200px) {
+            width: 500px; // Уменьшаем ширину
+        }
+        @media (max-width: 992px) {
+            width: 500px; // Уменьшаем ширину еще больше
+        }
+        @media (max-width: 767px) {
+            width: 90%; // Устанавливаем ширину в процентном отношении
+        }
+        @media (max-width: 575px) {
+            width: 95%; // Ширина увеличена для мобильных
+        }
     }
     .slick-prev, .slick-next {
         border: none;
         margin: 10px 110px; 
+        @media (max-width: 1200px) {
+            margin: 10px 60px; // Уменьшаем боковые отступы
+        }
+        @media (max-width: 992px) {
+            margin: 10px 60px; // Дальнейшее уменьшение отступов
+        }
+        @media (max-width: 767px) {
+            margin: 10px 30px; // Уменьшаем отступы для мобильных
+        }
+        @media (max-width: 575px) {
+            margin: 10px 15px; // Минимальные отступы для компактности
+        }
     }
 }

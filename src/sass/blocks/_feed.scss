@@ -1,31 +1,99 @@
 @use 'base/variables' as vars;
 .feed {
-    padding: 40px 200px 40px 200px;
+    padding: 40px 100px;
     background: url(../img/bg.png) center / cover no-repeat;
     &__item {
         display: flex;
         margin-top: 40px;
-        &:nth-child(2){
+        &:nth-child(2) {
             margin-top: 50px;
+        }
+        @media (max-width: 1200px) {
+            flex-direction: column; // Упорядочиваем элементы по колонкам
+            margin-top: 30px; // Уменьшаем верхний отступ
+        }
+        @media (max-width: 992px) {
+            padding: 20px; // Уменьшаем отступы для улучшения отображения
+        }
+        @media (max-width: 767px) {
+            margin-top: 20px; // Уменьшаем верхний отступ
+        }
+        @media (max-width: 575px) {
+            margin-top: 15px; // Уменьшаем верхний отступ
         }
     }
     &__img {
         width: 169px;
         height: 169px;
+        @media (max-width: 1200px) {
+            width: 150px; // Изменяем размеры изображений
+            height: 150px;
+        }
+        @media (max-width: 992px) {
+            width: 130px;
+            height: 130px;
+        }
+        @media (max-width: 767px) {
+            width: 100px;
+            height: 100px;
+        }
+        @media (max-width: 575px) {
+            width: 80px;
+            height: 80px; 
+        }
     }
     &__text {
         margin-left: 62px;
         padding-right: 60px;
+        @media (max-width: 1200px) {
+            margin-left: 40px; // Уменьшаем отступы
+            padding-right: 40px;
+        }
+        @media (max-width: 992px) {
+            margin-left: 20px;
+        }
+        @media (max-width: 767px) {
+            margin-left: 0;
+            padding-right: 20px; // Уменьшаем отступы
+            text-align: center; // Центрируем текст
+        }
+        @media (max-width: 575px) {
+            padding-right: 10px; // Делаем отступы меньше
+        }
     }
     &__subtitle {
         color: #0d0d0d;
         font-size: 18px;
         font-weight: 700;
+        @media (max-width: 1200px) {
+            font-size: 16px; // Уменьшаем размер шрифта
+        }
+        @media (max-width: 992px) {
+            font-size: 14px;
+        }
+        @media (max-width: 767px) {
+            font-size: 12px;
+        }
+        @media (max-width: 575px) {
+            font-size: 11px;
+        }
     }
     &__descr {
         color: #0d0d0d;
         font-size: 16px;
         font-weight: 300;
         margin-top: 10px;
+        @media (max-width: 1200px) {
+            font-size: 14px; // Уменьшаем шрифт
+        }
+        @media (max-width: 992px) {
+            font-size: 12px; 
+        }
+        @media (max-width: 767px) {
+            font-size: 11px;
+        }
+        @media (max-width: 575px) {
+            font-size: 10px;
+        }
     }
 }

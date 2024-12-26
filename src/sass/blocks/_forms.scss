@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     width: 350px;
-    margin: 40px 100px 20px 250px;
+    margin: 10px;
     input {
         height: 50px;
         border-radius: 5px;
@@ -11,12 +11,15 @@
         margin-bottom: 15px;
         border: none;
         padding: 0 20px;
-        color: #000000;
+        color: #ad1414;
         font-size: 14px;
         font-weight: 300;
         &:nth-child(3) {
             margin-bottom: 20px;
         }
+    }
+    &_mt25 {
+        margin-top: 25px;
     }
     &__submit {  // Исправлено - $_submit на &__submit
         width: 100%;
@@ -33,7 +36,7 @@
 }
 @media (max-width: 991px) {
     .feed-form {
-        width: 90%; /* Большая ширина для мобильных устройств */
+        width: 70%; /* Большая ширина для мобильных устройств */
         margin: 20px 5%; /* Уменьшенные отступы */
         input {
             font-size: 16px; /* Увеличение размера шрифта для лучшей видимости на мобильных устройствах */
@@ -47,8 +50,8 @@
 }
 @media (max-width: 767px) {
     .feed-form {
-        width: 90%; /* Увеличенная ширина для мобильных и небольших экранов */
-        margin: 12px 10px 20px 25px; /* Центрирование формы */
+        width: 60%; /* Увеличенная ширина для мобильных и небольших экранов */
+        margin: 12px 10px 20px 50px; /* Центрирование формы */
         input {
             font-size: 16px; /* Увеличение размера шрифта для лучшей видимости на мобильных устройствах */
             height: 45px; /* Уменьшение высоты поля ввода для мобильных устройств */
@@ -61,8 +64,8 @@
 }
 @media (max-width: 575px) {
     .feed-form {
-        width: 100%; /* Полная ширина для самых маленьких экранов */
-        margin: 10px 0; /* Минимальные отступы */
+        width: 50%; /* Полная ширина для самых маленьких экранов */
+        margin: 10px 30px; /* Минимальные отступы */
         input {
             height: 40px; /* Уменьшенная высота для маленьких экранов */
             padding: 0 10px; /* Уменьшение внутреннего отступа для доступа */
