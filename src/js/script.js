@@ -50,4 +50,38 @@ $(document).ready(function() {
             $('.overlay, #order').fadeIn('slow');
         })
     });
+
+    function valideForms(form){
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Введите своё имя",
+                    minlength: jQuery.validator.format("Введите {0} и более символов!")
+                },
+                phone: "Введите свой номер телефона",
+                email: {
+                    required: "Введите свою электронную почту",
+                    email: "Неправильно введён адрес почты"
+                }
+            }
+        });
+    };
+
+    valideForms('#consultation-form');
+    valideForms('#consultation form');
+    valideForms('#order form');
+
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
+
 });

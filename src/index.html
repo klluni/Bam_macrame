@@ -103,9 +103,9 @@
                 Заполните форму заявки<br>
                 и с вами свяжутся
             </div>
-            <form class="feed-form" action="#">
+            <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" required placeholder="Имя" type="text">
-                <input name="phone" required placeholder="Телефон" type="number">
+                <input name="phone" required placeholder="Телефон">
                 <input name="email" required placeholder="E-mail" type="email">
                 <button class="button button_subbmit">Заказать консультацию</button>
             </form>           
@@ -474,9 +474,9 @@
             <div class="modal__subtitle">Заполните форму заявки</div>
             <div class="modal__descr">И мы перезвоним вам</div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input name="name" required placeholder="Имя" type="text">
-                <input name="phone" required placeholder="Телефон" type="number">
-                <input name="email" required placeholder="E-mail" type="email">
+                <input name="name" placeholder="Имя" type="text">
+                <input name="phone" placeholder="Телефон">
+                <input name="email" placeholder="E-mail" type="email">
                 <button class="button button_subbmit">Заказать консультацию</button>
             </form> 
         </div>
@@ -487,7 +487,7 @@
             <div class="modal__descr">Изделие макраме</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" required placeholder="Имя" type="text">
-                <input name="phone" required placeholder="Телефон" type="number">
+                <input name="phone" required placeholder="Телефон">
                 <input name="email" required placeholder="E-mail" type="email">
                 <button class="button button_subbmit">купить</button>
             </form> 
@@ -499,7 +499,9 @@
             <div class="modal__descr">Мы скоро свяжемся с вами!</div>
         </div>
     </div>
-
+    
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

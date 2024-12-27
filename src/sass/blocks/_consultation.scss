@@ -9,6 +9,15 @@
         font-weight: 700;
         padding: 20px 0 0 250px;
     }
+    .error {
+        border: 1px solid red;
+    }
+    label.error {
+        color: #000000;
+        border: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
     /* Адаптация под разные разрешения */ 
     @media (max-width: 1200px) {
         padding: 30px 20px; /* Уменьшение отступов для планшетов */
